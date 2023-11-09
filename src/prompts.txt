@@ -1,0 +1,22 @@
+# Prompts for the First Classifier tutorial.
+
+I work in python and  I want to make a classification demo for a ML course.
+I need a piece of code that generates some tabular data.
+The last column is the target. The problem is a separable, binary problem.
+The first column is a mixture of two gaussians, with some overlapping, One gaussian for each class.
+ The second column helps discriminate in the cases where the first column is overlapping.
+ One class is centered around origin and the other class is distributed above and below the values of the first class.
+ The third column is random uniform noise.
+
+Given a pandas dataframe give me a function that plots in the same graph, one histogram per each class
+
+Write a function, that, given such a dataframe, will emit a numpy array with labels 0 and 1, randomly distributed
+for each row in the dataframe.
+
+Using scikit learn library please add code that evaluates how well the randomly predicted labels are matching the
+ actual labels from the dataframe. Report accuracy.
+
+write a piece of code that will classify all instances as zero, if the first column is less than 0
+
+Chat: https://chat.openai.com/share/4efb76a0-0cc6-4486-9133-842079837ebe
+

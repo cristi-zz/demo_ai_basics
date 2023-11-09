@@ -14,5 +14,6 @@ Instalati in functie de ce aveti nevoie.
     mamba install -c conda-forge opencv
     pip install --upgrade openai
     mamba install -c conda-forge jupyterlab
+    pip install scikit-learn
     pip install pytest
     mamba install -c conda-forge matplotlib
