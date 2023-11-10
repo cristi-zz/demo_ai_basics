@@ -3,6 +3,8 @@ Ai basics
 
 ## Setup la environment
 
+Instalati miniconda: https://docs.anaconda.com/free/anaconda/install/index.html
+
 
     conda create -n demo_ai python=3.10
     conda activate demo_ai
