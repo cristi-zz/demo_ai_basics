@@ -12,6 +12,6 @@ def test_basic_text_embedding():
 
 def test_basic_image_embedding():
     simobj = similarity.Image_Embedding()
-    img = cv2.imread("data/FudanPed00059.png")
+    img = cv2.imread("images/FudanPed00059.png")
     embed = simobj.embed_image(img)
     print(embed.shape)
