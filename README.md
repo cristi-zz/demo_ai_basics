@@ -11,11 +11,12 @@ Instalati miniconda: https://docs.anaconda.com/free/anaconda/install/index.html
 
 Instalati in functie de ce aveti nevoie.
 
+    pip install scikit-learn
+    pip install pytest
+    pip install numpy
     pip install --upgrade diffusers accelerate transformers
     pip install streamlit
     mamba install -c conda-forge opencv
     pip install --upgrade openai
     mamba install -c conda-forge jupyterlab
-    pip install scikit-learn
-    pip install pytest
     mamba install -c conda-forge matplotlib
