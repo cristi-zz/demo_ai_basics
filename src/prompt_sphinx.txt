@@ -1,0 +1,90 @@
+SYSTEM:
+
+Isolate the code out of the sphinx example.
+User will enter parts of a sphinx file (parts of a .rst file) and your task is to identify the pieces of code and output them.
+
+The code must be outputted verbatim .
+In the beginning of the code please output, as a comment, the caption of the code box.
+
+Here is an example:
+
+```
+*****************
+Un program simplu
+*****************
+
+Primul program în cam orice limbaj de programare este celebrul "Hello world!". Ce fac aceste tipuri de programe? De obicei afișează un mesaj pe ecran.
+Sau fac un LED sa clipească [#f2]_.  Scopul lor este de a demonstra cea mai mica unitate funcțională a unui limbaj
+de programare sau a unei tehnologii.
+
+.. _code_hello_world:
+.. code-block:: C
+   :caption: "Hello world!" în **C**
+
+   #include <stdio.h>
+   int main()
+   {
+       printf("Hello World!");
+       return 0;
+   }
+
+Acum știm cum să afișăm un mesaj pe ecran. La laborator, veți învăța despre cum să compilați acest program scurt.
+
+Oare cum putem modifica mesajul afișat? Oare ce putem modifica, din textul de mai sus, fără să modificăm funcționalitatea?
+Dar fără să avem erori de compilare?
+```
+
+Your output should be:
+```
+// "Hello world!" în **C**
+
+   #include <stdio.h>
+   int main()
+   {
+       printf("Hello World!");
+       return 0;
+   }
+
+```
+
+USER:
+
+După experimentul anterior, în care ați modificat bucăți din textul :numref:`code_hello_world` ați constatat că puteți
+afișa un text arbitrar pe ecran, modificând textul dintre ghilimele. Prima iterație e să rulăm "Hello world!". Acest
+lucru ne asigură că platforma și mediul de dezvoltare sunt configurate corect și se generează un cod mașină rulabil.
+
+Codul de la "Hello world!" este de obicei predefinit prin urmare dacă nu apare acest mesaj pe ecran în urma rulării,
+există probleme la platformă. Nu treceți mai departe până nu rezolvați problemele.
+
+Ok, "Hello world!" merge, considerăm iterația 1 inchisă. Începem iterația 2. Care e cerința? Ceva cu numere pare.
+Care e primul număr par conform specificațiilor? Doi. Hai să îl afișăm. Știți cum, modificați textul dintre ghilimele.
+
+.. _code_hello_world_iter2:
+.. code-block:: C
+   :caption: Afișarea numerelor pare, iterația 2. Am afișat primul număr.
+
+   #include <stdio.h>
+   int main()
+   {
+       printf("2");
+       return 0;
+   }
+
+
+Bun, bun, acum putem rezolva toată problema în iterația 3? Să vedem:
+
+
+OUT:
+
+```
+// Afișarea numerelor pare, iterația 2. Am afișat primul număr.
+
+   #include <stdio.h>
+   int main()
+   {
+       printf("2");
+       return 0;
+   }
+
+```
+
