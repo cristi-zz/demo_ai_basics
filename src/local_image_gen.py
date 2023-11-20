@@ -18,9 +18,9 @@ else:
     pipeline = DiffusionPipeline.from_pretrained("runwayml/stable-diffusion-v1-5", use_safetensors=True)
 
 pipeline.to(device)
-generator = torch.Generator(device).manual_seed(32344)
+generator = torch.Generator(device).manual_seed(3213)
 
-generator_output = pipeline(prompt, guidance_scale=4.5, num_inference_steps=3, generator=generator)
+generator_output = pipeline(prompt, guidance_scale=4.5, num_inference_steps=5, generator=generator)
 image = generator_output.images[0]
 image.save("../test/images/local_image_gen1.jpg")
 
